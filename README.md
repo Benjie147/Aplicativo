@@ -11,32 +11,77 @@
 ![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
 
 
-## 📁 Estructura del repositorio
+# 📘 Proyecto Módulo 1 – Fundamentos de Programación
 
- 
+![Streamlit](https://img.shields.io/badge/Streamlit-v1.30.0-orange) ![Python](https://img.shields.io/badge/Python-3.10-blue)
 
+---
+
+## 📄 Descripción
+Aplicación desarrollada en **Streamlit** que integra conceptos fundamentales de programación en Python, aprendidos en el Módulo 1.  
+Permite gestionar actividades financieras y evaluar su desempeño mediante:
+
+- Variables y condicionales
+- Listas y diccionarios
+- Funciones y programación funcional
+- Programación orientada a objetos (POO)
+
+---
+
+## 🏗️ Funcionalidades por Ejercicio
+
+### Ejercicio 1 – Variables y Condicionales
+- Verificador simple de presupuesto vs gasto.
+- Indica si el gasto está dentro o fuera del presupuesto.
+- Muestra la diferencia entre presupuesto y gasto.
+
+### Ejercicio 2 – Listas y Diccionarios
+- Registro de actividades financieras.
+- Cada actividad se guarda como diccionario.
+- Visualización de estado de cada actividad con colores y emojis ✅/❌.
+
+### Ejercicio 3 – Funciones y Programación Funcional
+- Cálculo del retorno esperado por actividad.
+- Uso de funciones, `map` y `lambda`.
+
+### Ejercicio 4 – Programación Orientada a Objetos (POO)
+- Clase `Actividad` con atributos y métodos:
+  - `esta_en_presupuesto()`
+  - `mostrar_info()`
+- Visualización de información y estado de cada objeto.
+
+---
+
+## 🗂️ Estructura del proyecto
+- `app.py` – Código principal de la aplicación en Streamlit  
+- `requirements.txt` – Librerías necesarias para ejecutar la app  
+- `README.md` – Documentación del proyecto  
+
+---
+
+## ⚙️ Instrucciones de ejecución
+
+1. Instalar dependencias:
 ```bash
+pip install -r requirements.txt
 
-# Carpeta raíz del proyecto
+Ejecutar la aplicación:
 
-LAS-Visualizer/
+streamlit run app.py
+🌐 Enlaces
 
-├── Archivo principal de la aplicación Streamlit
+Repositorio GitHub: Coloca aquí tu enlace al repo
 
-├── app.py                     
+Aplicación en Streamlit Cloud: Coloca aquí tu enlace de despliegue
 
-├── Documentación del proyecto
+🖼️ Capturas de pantalla
 
-├── README.md                 
+(Opcional: agregar capturas de cada módulo para mostrar la interfaz)
 
-├── Logo de la marca personal (usado en el sidebar)
 
-├── Logo Carlos Carrillo.png  
 
-├── Carpeta para almacenar archivos LAS de ejemplo
 
-├── Data/
+👨‍🎓 Autor
 
-     └── Aquí puedes colocar archivos .las para pruebas
-
-```
+Nombre del estudiante: Víctor Benjamín Rivas Jáuregui
+Año: 2026
