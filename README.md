@@ -59,11 +59,7 @@ streamlit run app.py
 
 Repositorio GitHub: https://github.com/Benjie147/Aplicativo
 
-Aplicación en Streamlit Cloud: [Coloca aquí tu enlace de despliegue](https://aplicativo-victor-benjamin-rivas.streamlit.app/)
-
-🖼️ Captura de pantalla
-
-<img width="1894" height="801" alt="image" src="https://github.com/user-attachments/assets/717a15e9-045b-4b2b-a762-1601754e7497" />
+Aplicación en Streamlit Cloud: https://aplicativo-victor-benjamin-rivas.streamlit.app
 
 
 👨‍🎓 Autor
