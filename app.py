@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="Proyecto Módulo 1", layout="centered")
 
-# Inicializar lista de actividades en memoria
 if "actividades" not in st.session_state:
     st.session_state.actividades = []
 
@@ -184,3 +183,4 @@ elif menu == "4️⃣ Ejercicio":
 
     else:
         st.warning("No hay actividades registradas.")
+
