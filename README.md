@@ -1,19 +1,6 @@
-# Proyecto Aplicado en Streamlit – Fundamentos de Programación
-
-![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
-
-![License](https://img.shields.io/badge/License-MIT-green)
-
-![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
-
-![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
-
-![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
-
-
 # 📘 Proyecto Módulo 1 – Fundamentos de Programación
 
-![Streamlit](https://img.shields.io/badge/Streamlit-v1.53.1-orange) ![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-v1.53.1-orange) ![Python](https://img.shields.io/badge/Python-3.10-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen) ![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
 
 ---
 
