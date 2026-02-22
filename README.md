@@ -13,7 +13,7 @@
 
 # 📘 Proyecto Módulo 1 – Fundamentos de Programación
 
-![Streamlit](https://img.shields.io/badge/Streamlit-v1.30.0-orange) ![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-v1.53.1-orange) ![Python](https://img.shields.io/badge/Python-3.10-blue)
 
 ---
 
