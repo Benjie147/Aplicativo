@@ -1,60 +1,63 @@
 import streamlit as st
 
-# ----------------------------------------
-# CONFIGURACIÓN INICIAL
-# ----------------------------------------
-
 st.set_page_config(page_title="Proyecto Módulo 1", layout="centered")
 
 # Inicializar lista de actividades en memoria
 if "actividades" not in st.session_state:
     st.session_state.actividades = []
 
-# ----------------------------------------
 # MENÚ LATERAL
-# ----------------------------------------
+
 
 menu = st.sidebar.selectbox(
-    "Navegación",
-    ["Home", "Ejercicio 1", "Ejercicio 2", "Ejercicio 3", "Ejercicio 4"]
+    "🚀 Selecciona una página:",
+    ["🏠 Home", "1️⃣ Ejercicio", "2️⃣ Ejercicio", "3️⃣ Ejercicio", "4️⃣ Ejercicio"]
 )
+st.sidebar.markdown(
+    '<hr style="border: 0.5px solid #cccccc; margin: 5px 0;">',
+    unsafe_allow_html=True
+)
+st.sidebar.image("logo.png", use_container_width=True)
 
-# ----------------------------------------
+st.sidebar.markdown("🖥️ Proyecto Módulo 1")
+
 # HOME
-# ----------------------------------------
 
-if menu == "Home":
+if menu == "🏠 Home":
 
-    st.title("Proyecto Módulo 1 – Fundamentos de Programación")
+    st.title("💻Proyecto Módulo 1 – Fundamentos de Programación") 
+    linkedin_url = "https://www.linkedin.com/in/victor-benjamin-rivas-jauregui-832a5b315/" 
+    st.markdown(
+        f'<a href="{linkedin_url}" target="_blank">'
+        '<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"> Víctor Benjamín Rivas Jáuregui'
+        '</a>',
+        unsafe_allow_html=True
+    )
 
-    st.write("**Nombre del estudiante:** TU NOMBRE COMPLETO")
-    st.write("**Curso:** Especialización en Python for Analytics")
-    st.write("**Módulo:** Módulo 1 – Python Fundamentals")
-    st.write("**Año:** 2026")
-
+    st.write("**Especialización en Python for Analytics**")
+    st.write("**Python Fundamentals 2026**")
     st.write("""
-    Esta aplicación integra los conceptos fundamentales de programación en Python:
-    - Variables
-    - Condicionales
-    - Listas y Diccionarios
-    - Funciones
-    - Programación Funcional
-    - Programación Orientada a Objetos (POO)
+    Esta aplicación integra los conceptos fundamentales de programación en Python:\n
+    ✅ Variables\n
+    ✅ Condicionales\n
+    ✅ Listas y Diccionarios\n
+    ✅ Funciones\n
+    ✅ Programación Funcional\n
+    ✅ Programación Orientada a Objetos (POO)\n
 
     La aplicación permite gestionar actividades financieras y evaluar su desempeño.
     """)
 
     st.write("**Tecnologías utilizadas:**")
-    st.write("- Python")
-    st.write("- Streamlit")
+    st.write("🟢 Python")
+    st.write("🟢 Streamlit")
 
-# ----------------------------------------
-# EJERCICIO 1 – VARIABLES Y CONDICIONALES
-# ----------------------------------------
+# EJERCICIO 1
 
-elif menu == "Ejercicio 1":
 
-    st.title("Ejercicio 1 – Verificador de Presupuesto")
+elif menu == "1️⃣ Ejercicio":
+
+    st.title("📝Verificador de Presupuesto")
 
     presupuesto = st.number_input("Ingrese el presupuesto:", min_value=0.0)
     gasto = st.number_input("Ingrese el gasto:", min_value=0.0)
@@ -70,16 +73,14 @@ elif menu == "Ejercicio 1":
 
         st.write(f"Diferencia: {diferencia}")
 
-# ----------------------------------------
-# EJERCICIO 2 – LISTAS Y DICCIONARIOS
-# ----------------------------------------
+# EJERCICIO 2 
 
-elif menu == "Ejercicio 2":
+elif menu == "2️⃣ Ejercicio":
 
-    st.title("Ejercicio 2 – Registro de Actividades")
+    st.title("📊Registro de Actividades Financieras")
 
     nombre = st.text_input("Nombre de la actividad")
-    tipo = st.selectbox("Tipo de actividad", ["Marketing", "Operaciones", "Finanzas", "Otro"])
+    tipo = st.selectbox("Tipo de actividad", ["Marketing", "Comercial", "Omnicanal", "legal", "Otro"])
     presupuesto = st.number_input("Presupuesto", min_value=0.0)
     gasto_real = st.number_input("Gasto Real", min_value=0.0)
 
@@ -104,17 +105,15 @@ elif menu == "Ejercicio 2":
 
         for act in st.session_state.actividades:
             if act["gasto_real"] <= act["presupuesto"]:
-                st.write(f"{act['nombre']} → Dentro del presupuesto")
+                st.write(f"✅{act['nombre']} esta dentro del presupuesto")
             else:
-                st.write(f"{act['nombre']} → Presupuesto excedido")
+                st.write(f"❌{act['nombre']} esta fuera del presupuesto")
 
-# ----------------------------------------
-# EJERCICIO 3 – FUNCIONES Y PROGRAMACIÓN FUNCIONAL
-# ----------------------------------------
+# EJERCICIO 3
 
-elif menu == "Ejercicio 3":
+elif menu == "3️⃣ Ejercicio":
 
-    st.title("Ejercicio 3 – Cálculo de Retorno Esperado")
+    st.title("📊Cálculo de Retorno Esperado")
 
     def calcular_retorno(actividad, tasa, meses):
         return actividad["presupuesto"] * tasa * meses
@@ -142,13 +141,11 @@ elif menu == "Ejercicio 3":
         else:
             st.warning("No hay actividades registradas.")
 
-# ----------------------------------------
 # EJERCICIO 4 – PROGRAMACIÓN ORIENTADA A OBJETOS
-# ----------------------------------------
 
-elif menu == "Ejercicio 4":
+elif menu == "4️⃣ Ejercicio":
 
-    st.title("Ejercicio 4 – Programación Orientada a Objetos")
+    st.title("⚙️Programación Orientada a Objetos")
 
     class Actividad:
 
